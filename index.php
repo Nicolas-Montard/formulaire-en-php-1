@@ -8,26 +8,26 @@
 </head>
 <body>
 
-<form  action="/result.php"  method="post">
+<form  action="/thanks.php"  method="post">
     <div>
       <label  for="nom">Nom :</label>
-      <input  type="text"  id="nom"  name="user_name">
+      <input  type="text"  id="nom"  name="user_name" required>
     </div>
     <div>
       <label  for="prenom">prénom :</label>
-      <input  type="text"  id="prenom"  name="user_firstname">
+      <input  type="text"  id="prenom"  name="user_firstname" required>
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email">
+        <input  type="email"  id="courriel"  name="user_email" required>
     </div>
     <div>
       <label  for="telephone">telephone :</label>
-      <input  type="number"  id="telephone"  name="user_telephone">
+      <input  type="number"  id="telephone"  name="user_telephone" required>
     </div>
     <div>
       <label  for="sujet">sujet :</label>
-      <select id="sujet" name="user_subject">
+      <select id="sujet" name="user_subject" required>
         <option value="sujet 1">sujet 1</option>
         <option value="sujet 2">sujet 2</option>
         <option value="sujet 3">sujet 3</option>
@@ -35,7 +35,7 @@
     </div>
     <div>
       <label  for="message">Message :</label>
-      <textarea  id="message"  name="user_message"></textarea>
+      <textarea  id="message"  name="user_message" required></textarea>
     </div>
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
